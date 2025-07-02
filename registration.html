@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Tech Fest</title>
+    <style>
+        *{ 
+            font-family: Poppins, sans-serif;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 6px;
+        }   
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(3, 76, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="register">
+        <h1>Register Here..</h1>
+        <div class="container">
+        <form id="registrationForm" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter Email" required><br><br>
+                                
+            <label for="no">Mobile Number:</label>
+            <input type="text" id="no" placeholder="Enter Mobile Number" required><br><br>
+
+            <label for="iname">Institute Name:</label>
+            <input type="text" id="name" placeholder="Enter Institute Name" required><br><br>
+
+            <label for="participate">Competition:</label>
+            <select required>
+                <option value="" disabled hidden selected>Select Competition</option>
+                <option value="hack">Hackathon</option>
+                <option value="game">Gaming Tournament</option>
+                <option value="project">Tech Project Competition</option>
+                <option value="art">Digital Art Competition</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
